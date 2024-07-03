@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
+body {
+  @apply text-primary;
+}
+
+h1 {
+  @apply text-heading-3 md:text-heading-2 lg:text-heading-1;
+}
+
+h2 {
+  @apply text-heading-4 md:text-heading-3 lg:text-heading-2;
+}
+
+h3 {
+  @apply text-heading-5 md:text-heading-4 lg:text-heading-3;
+}
+
+h4 {
+  @apply text-lg md:text-heading-5 lg:text-heading-4;
+}
+
+h5 {
+  @apply text-base md:text-lg lg:text-heading-4;
+}
+
+p {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+button {
+  @apply px-8 py-4 bg-pink rounded-lg text-black transition hover:bg-transparent hover:text-pink border border-pink;
+}
+
+button.bordered {
+  @apply px-8 py-4 bg-transparent border border-pink rounded-lg text-pink hover:bg-pink hover:text-black transition;
+}
+
+nav ul {
+  @apply py-0 h-0 lg:h-fit transition-all duration-500 ease-linear;
+}
+
+#nav-check:checked + ul {
+  @apply py-6 h-[392px];
+}

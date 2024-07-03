@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solhaven</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="fixed left-0 right-0 top-8 container" id="navbar">
+      <nav class="bg-white rounded-md font-serif shadow-lg relative">
+        <div class="py-2 px-4 lg:px-8 flex justify-between items-center">
+          <a href="#" class="flex gap-3 items-center">
+            <img src="./assets/logo.jpg" alt="logo" />
+            <h4 class="text-primary font-semibold hidden xl:block">Solhaven</h4>
+          </a>
+
+          <label for="nav-check" class="xl:hidden text-black">
+            <i class="fa fa-bars"></i>
+          </label>
+          <input type="checkbox" id="nav-check" class="hidden" />
+
+          <ul
+            class="flex gap-10 flex-col lg:flex-row absolute lg:static top-12 px-4 lg:px-0 w-full bg-white lg:bg-transparent left-0 lg:justify-center rounded-b-md overflow-y-hidden shadow-lg lg:shadow-none"
+          >
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li>
+              <a href="#specialist">Specialist</a>
+            </li>
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
+          </ul>
+
+          <aside class="text-sm hidden lg:block text-nowrap">
+            <p class="text-center">Call Us Now</p>
+            <div class="flex items-center gap-2">
+              <i class="fa fa-phone rotate-90"></i>
+              <a href="tel:833-900-8338">833-900-8338</a>
+            </div>
+          </aside>
+        </div>
+      </nav>
+    </div>
+
+    <header
+      class="bg-cover h-screen bg-[center]"
+      style="background-image: url(./assets/header-bg.jpeg)"
+    >
+      <div
+        class="w-screen h-screen bg-primary-81 text-white flex justify-center items-center"
+      >
+        <div class="w-full xl:w-1/2">
+          <h1 class="font-bold font-serif capitalize text-center">
+            Taking care of your mental health is an act of self-love
+          </h1>
+          <p class="text-center lg:w-2/3 mx-auto">
+            At Solhaven, we offer compassionate mental health services designed
+            to help you thrive. Discover our personalized therapy options and
+            take the first step towards a brighter tomorrow
+          </p>
+
+          <div class="flex gap-4 justify-center mt-12">
+            <button>Get Started</button>
+            <button class="bordered">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="h-screen"></section>
+    <script
+      src="https://kit.fontawesome.com/b50fc748ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
