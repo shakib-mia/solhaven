@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @tailwind base;
@@ -29,7 +30,7 @@ h4 {
 }
 
 h5 {
-  @apply text-base md:text-lg lg:text-heading-4;
+  @apply text-base md:text-lg lg:text-heading-5;
 }
 
 p {
@@ -38,6 +39,10 @@ p {
 
 button {
   @apply px-8 py-4 bg-pink rounded-lg text-black transition hover:bg-transparent hover:text-pink border border-pink;
+}
+
+button.primary {
+  @apply px-8 py-4 bg-primary rounded-lg text-white transition hover:bg-transparent hover:text-primary border border-primary;
 }
 
 button.bordered {

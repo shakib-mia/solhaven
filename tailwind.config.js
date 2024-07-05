@@ -15,6 +15,7 @@ export default {
     fontFamily: {
       serif: ["Hahmlet", "serif"],
       ["sans-serif"]: ["Roboto", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
 
     extend: {
@@ -34,9 +35,14 @@ export default {
           62: "#002D429E",
           81: "#002D42CF",
         },
+        accent: "#3B819E",
         black: "#333333",
         white: "#FFFFFF",
         pink: "#FFEEE7",
+        gradient: {
+          end: "#579DBC",
+          start: "#365F72",
+        },
       },
     },
   },

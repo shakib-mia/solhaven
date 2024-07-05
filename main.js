@@ -1,5 +1,4 @@
 import Lenis from "lenis";
-AOS.init();
 
 const lenis = new Lenis();
 
@@ -50,3 +49,7 @@ function createScrollDirectionTracker() {
 }
 
 createScrollDirectionTracker();
+
+AOS.init({
+  once: true,
+});
