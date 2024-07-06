@@ -56,3 +56,15 @@ nav ul {
 #nav-check:checked + ul {
   @apply py-6 h-[392px];
 }
+
+.owl-nav {
+  @apply hidden;
+}
+
+.owl-carousel .owl-stage-outer {
+  @apply pt-10 pb-5 lg:py-10;
+}
+
+.owl-dots {
+  @apply h-0;
+}

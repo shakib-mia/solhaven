@@ -53,3 +53,18 @@ createScrollDirectionTracker();
 AOS.init({
   once: true,
 });
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1024: { items: 3 },
+    },
+    nav: true,
+    margin: 30,
+  });
+
+  $(".arrow-prev").click(() => $(".owl-prev")[0].click());
+  $(".arrow-next").click(() => $(".owl-next")[0].click());
+});

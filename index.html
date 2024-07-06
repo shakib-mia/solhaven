@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solhaven</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -403,11 +417,13 @@
           Meet with our Dedicated Experts
         </h2>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 lg:mt-20 gap-6"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 lg:mt-20 gap-6"
+          id="experts"
         >
           <article
             class="rounded-lg overflow-hidden relative group"
             data-aos="fade-up"
+            data-aos-anchor="#experts"
             data-aos-duration="1000"
           >
             <img
@@ -466,6 +482,7 @@
           <article
             class="rounded-lg overflow-hidden relative group"
             data-aos="fade-up"
+            data-aos-anchor="#experts"
             data-aos-duration="1000"
             data-aos-delay="100"
           >
@@ -525,6 +542,7 @@
           <article
             class="rounded-lg overflow-hidden relative group"
             data-aos="fade-up"
+            data-aos-anchor="#experts"
             data-aos-duration="1000"
             data-aos-delay="200"
           >
@@ -580,6 +598,129 @@
           </article>
         </div>
       </section>
+
+      <!-- Testimonials Section -->
+      <section
+        class="bg-gradient-to-r from-gradient-start to-gradient-end py-14 lg:py-28 text-white"
+      >
+        <div class="container flex flex-col lg:flex-row">
+          <div class="w-full lg:w-1/4">
+            <h2 class="font-serif font-bold mb-6">Our Clients' Journeys</h2>
+            <p>
+              I am very helped in making a website and business development that
+              makes the product that I have to have a quality for use by the
+              user
+            </p>
+
+            <div class="mt-10 gap-6 hidden lg:flex">
+              <label
+                class="bg-white w-14 h-14 text-black rounded-lg flex items-center justify-center cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition arrow-prev"
+              >
+                <i class="fa fa-arrow-right rotate-180"></i>
+              </label>
+
+              <label
+                class="bg-white w-14 h-14 text-black rounded-lg flex items-center justify-center cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition arrow-next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </label>
+            </div>
+          </div>
+          <div class="w-full lg:w-3/4 lg:pl-10">
+            <!-- Set up your HTML -->
+            <div class="owl-carousel">
+              <div class="bg-white text-black px-4 pb-8 pt-12 rounded relative">
+                <div class="absolute w-14 h-14 -top-7">
+                  <img
+                    src="./assets/testimonials/testimonial1.png"
+                    alt="testimonial1"
+                    class="object-cover"
+                  />
+                </div>
+                <h5 class="font-serif">Jessica R</h5>
+                <p class="text-sm text-gray">Los Angeles, CA</p>
+                <p class="mt-5">
+                  As a busy professional, the convenience of Solhaven's online
+                  therapy sessions has been a game-changer. Despite the virtual
+                  format, I've felt fully understood and supported by my
+                  therapist, who has tailored our sessions to address my unique
+                  needs. Their commitment to my well-being has been truly
+                  remarkable.
+                </p>
+              </div>
+              <div class="bg-white text-black px-4 pb-8 pt-12 rounded relative">
+                <div class="absolute w-14 h-14 -top-7">
+                  <img
+                    src="./assets/testimonials/testimonial2.png"
+                    alt="testimonial1"
+                    class="object-cover"
+                  />
+                </div>
+                <h5 class="font-serif">Michael D</h5>
+                <p class="text-sm text-gray">Chicago, IL</p>
+                <p class="mt-5">
+                  Solhaven has been a true sanctuary for me during a challenging
+                  time in my life. The compassionate guidance and evidence-based
+                  approach of their therapists have helped me develop healthier
+                  coping mechanisms and find inner strength I didn't know I had.
+                  I'm forever grateful for their support
+                </p>
+              </div>
+              <div class="bg-white text-black px-4 pb-8 pt-12 rounded relative">
+                <div class="absolute w-14 h-14 -top-7">
+                  <img
+                    src="./assets/testimonials/testimonial3.png"
+                    alt="testimonial1"
+                    class="object-cover"
+                  />
+                </div>
+                <h5 class="font-serif">Sarah M.</h5>
+                <p class="text-sm text-gray">Miami, FL</p>
+                <p class="mt-5">
+                  Solhaven's family counseling services have been instrumental
+                  in helping my family navigate complex dynamics and
+                  communication issues. Their skilled therapists have provided
+                  us with practical tools and a safe space to have honest
+                  conversations, ultimately strengthening our bonds .
+                </p>
+              </div>
+              <div class="bg-white text-black px-4 pb-8 pt-12 rounded relative">
+                <div class="absolute w-14 h-14 -top-7">
+                  <img
+                    src="./assets/testimonials/testimonial1.png"
+                    alt="testimonial1"
+                    class="object-cover"
+                  />
+                </div>
+                <h5 class="font-serif">Jessica R</h5>
+                <p class="text-sm text-gray">Los Angeles, CA</p>
+                <p class="mt-5">
+                  As a busy professional, the convenience of Solhaven's online
+                  therapy sessions has been a game-changer. Despite the virtual
+                  format, I've felt fully understood and supported by my
+                  therapist, who has tailored our sessions to address my unique
+                  needs. Their commitment to my well-being has been truly
+                  remarkable.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex lg:hidden lg:mt-10 gap-6">
+              <label
+                class="bg-white w-14 h-14 text-black rounded-lg flex items-center justify-center cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition arrow-prev"
+              >
+                <i class="fa fa-arrow-right rotate-180"></i>
+              </label>
+
+              <label
+                class="bg-white w-14 h-14 text-black rounded-lg flex items-center justify-center cursor-pointer border-2 border-white hover:bg-transparent hover:text-white transition arrow-next"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script
@@ -587,6 +728,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

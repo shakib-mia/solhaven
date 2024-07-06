@@ -39,6 +39,7 @@ export default {
         black: "#333333",
         white: "#FFFFFF",
         pink: "#FFEEE7",
+        gray: "#A8A8A8",
         gradient: {
           end: "#579DBC",
           start: "#365F72",
