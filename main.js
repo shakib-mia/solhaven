@@ -55,7 +55,8 @@ AOS.init({
 });
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  // Initialize the first carousel
+  $(".owl-carousel:not(#partners .owl-carousel)").owlCarousel({
     responsive: {
       0: { items: 1 },
       768: { items: 2 },
@@ -63,8 +64,61 @@ $(document).ready(function () {
     },
     nav: true,
     margin: 30,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+  });
+
+  // Initialize the second carousel
+  $("#partners .owl-carousel").owlCarousel({
+    responsive: {
+      0: { items: 2, loop: true, autoplay: true, mouseDrag: true },
+      768: { items: 3, loop: true, autoplay: true, mouseDrag: true },
+      1024: { items: 5, loop: false, autoplay: false, mouseDrag: false },
+    },
+    nav: true,
+    margin: 96,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
   });
 
   $(".arrow-prev").click(() => $(".owl-prev")[0].click());
   $(".arrow-next").click(() => $(".owl-next")[0].click());
+});
+
+document.querySelectorAll(".accordion-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector(".accordion-icon");
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      icon.classList.remove("rotate");
+    } else {
+      document.querySelectorAll(".accordion-content").forEach((item) => {
+        item.style.maxHeight = null;
+        item.previousElementSibling
+          .querySelector(".accordion-icon")
+          .classList.remove("rotate");
+      });
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.classList.add("rotate");
+    }
+  });
+
+  button.addEventListener("click", () => {
+    const accordionItem = button.parentElement;
+    const isActive = accordionItem.classList.contains("active");
+
+    // Close all accordion items
+    document.querySelectorAll(".accordion-item").forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    // Toggle active class on clicked accordion item
+    if (!isActive) {
+      accordionItem.classList.add("active");
+    }
+  });
 });

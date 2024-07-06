@@ -44,6 +44,7 @@ export default {
           end: "#579DBC",
           start: "#365F72",
         },
+        blue: "#5091AD",
       },
     },
   },
