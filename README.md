@@ -8,13 +8,19 @@ Solhaven is dedicated to providing compassionate and personalized mental health 
 
 **Live Preview:** [Solhaven](https://solhaven-vite.netlify.app/)
 
-## Features:
+## Features
 
-- **Compassionate Mental Health Services:** Personalized therapy options designed to help individuals thrive.
-- **Safe and Secure Environment:** A nurturing space for clients to explore feelings and overcome challenges.
-- **Tailored Therapeutic Approaches:** Integration of various therapeutic methods to promote overall well-being.
-- **Experienced Professionals:** Dedicated experts with years of experience in mental health support.
-- **Comprehensive Support:** From cognitive-behavioral therapy to trauma-focused care, we provide a full range of services.
+- **Responsive Design:** Built with mobile-first principles, ensuring seamless display across various devices and screen sizes.
+
+- **Customizable Layout:** Tailwind CSS enables easy customization of colors, typography, and spacing to align with your brand identity.
+
+- **Optimized Performance:** Leveraging Vite's lightning-fast build process, your website loads swiftly, enhancing user experience.
+
+- **Extensive Listings:** Listed premium services like Task Management, Design System, Best Practices.
+
+- **Testimonials Section:** Showcase client testimonials to build trust and credibility, encouraging new visitors to engage with your offerings.
+
+- **Contact Form Integration:** Seamlessly integrate a contact form for inquiries, bookings, or general communication, enhancing user engagement.
 
 ## Usage Instructions:
 
