@@ -122,3 +122,5 @@ document.querySelectorAll(".accordion-button").forEach((button) => {
     }
   });
 });
+
+document.getElementById("year").innerText = new Date().getFullYear();

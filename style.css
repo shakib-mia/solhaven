@@ -37,20 +37,24 @@ p {
   @apply text-sm md:text-base lg:text-lg;
 }
 
-button {
-  @apply px-8 py-4 bg-pink rounded-lg text-black transition hover:bg-transparent hover:text-pink border border-pink;
+button,
+.button {
+  @apply px-8 py-4 bg-pink rounded-lg text-black transition hover:bg-transparent hover:text-pink border border-pink inline-block;
 }
 
-button.primary {
-  @apply px-8 py-4 bg-primary rounded-lg text-white transition hover:bg-transparent hover:text-primary border border-primary;
+button,
+.primary {
+  @apply px-8 py-4 bg-primary rounded-lg text-white transition hover:bg-transparent hover:text-primary border border-primary inline-block;
 }
 
-button.white {
-  @apply px-8 py-4 bg-white rounded-lg text-black transition hover:bg-transparent hover:text-white border border-white;
+button,
+.white {
+  @apply px-8 py-4 bg-white rounded-lg text-black transition hover:bg-transparent hover:text-white border border-white inline-block;
 }
 
-button.bordered {
-  @apply px-8 py-4 bg-transparent border border-pink rounded-lg text-pink hover:bg-pink hover:text-black transition;
+button,
+.bordered {
+  @apply px-8 py-4 bg-transparent border border-pink rounded-lg text-pink hover:bg-pink hover:text-black transition inline-block;
 }
 
 nav ul {
@@ -79,7 +83,8 @@ nav ul {
 .accordion-content.active {
   @apply max-h-screen;
 }
-.accordion-button {
+.accordion-button,
+.button {
   @apply cursor-pointer py-5 px-6 rounded;
 }
 
@@ -87,7 +92,8 @@ nav ul {
   transition: transform 0.3s ease;
 }
 
-.accordion-item.active .accordion-button .accordion-icon {
+.accordion-item.active .accordion-button,
+.button .accordion-icon {
   transform: rotate(180deg);
 }
 
